@@ -11,7 +11,7 @@ INLINE_SPLITTER = re.compile(r"""
     """, re.VERBOSE)
 
 INLINE_KWARG_PARSER = re.compile(r"""
-    (?P<kwargs>(?:\s\b[a-z_]+=\w+\s?)+)?\Z # kwargs match everything at the end in groups " name=arg"
+    (?P<kwargs>(?:\s\b[a-z_]+=\S+\s?)+)?\Z # kwargs match everything at the end in groups " name=arg"
     """, re.VERBOSE)
 
 
